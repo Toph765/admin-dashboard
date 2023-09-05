@@ -10,7 +10,8 @@
 :root {
     --sidebar-color: #C63D2F;
     --accent-color: #FFBB5C;
-    --main-background-color: #e9dcdb;
+    --main-background-color: #F4F2DE;
+    --text-color: #e9dcdb;
 }
 
 .icon {
@@ -20,18 +21,19 @@
 
 /* CONTAINER */
 
-.container {
+/* .container {
 
-}
+} */
 
 /* HEADER */
 
 .header {
+    background-color: var(--text-color);
     display: grid;
     gap: 10px;
     align-items: center;
     grid-template-columns: 2fr 1fr;
-    margin: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .search {
@@ -70,8 +72,8 @@
 }
 
 .welcome > img {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
 }
 
@@ -85,6 +87,7 @@ button {
     padding: 8px 16px;
     border-radius: 20px;
     border-style: none;
-    width: 120px;
     background-color: var(--sidebar-color);
+    color: var(--text-color);
+    width: 120px;
 }
