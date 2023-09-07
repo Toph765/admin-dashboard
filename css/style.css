@@ -110,6 +110,11 @@ button {
     gap: 42px;
     font-weight: bold;
     padding: 15px 15px;
+    color: var(--text-color);
+}
+
+.left-sidebar img {
+    filter: invert(1);
 }
 
 .left-sidebar > div:first-child,
