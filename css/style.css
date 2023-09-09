@@ -24,6 +24,7 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    background-color: var(--main-background-color);
 }
 
 /* HEADER */
@@ -163,7 +164,7 @@ button {
 }
 
 .card {
-    background-color: var(--main-background-color);
+    background-color: var(--text-color);
     border-radius: 8px;
     display: grid;
     grid-template-columns: 8px 1fr;
@@ -210,7 +211,7 @@ button {
 }
 
 .right-sidebar-upper .container {
-    background-color: var(--main-background-color);
+    background-color: var(--text-color);
     border-radius: 8px;
     display: grid;
     font-size: .9rem;
@@ -249,7 +250,7 @@ button {
 }
 
 .right-sidebar-lower .container {
-    background-color: var(--main-background-color);
+    background-color: var(--text-color);
     border-radius: 8px;
     display: grid;
     grid-template-columns: 1fr;
