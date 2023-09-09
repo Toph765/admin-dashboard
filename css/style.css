@@ -138,18 +138,19 @@ button {
 
 .article {
     display: grid;
+    grid-template-columns: 3fr 1fr;
     gap: 15px;
     padding: 15px 15px;
 }
 
-.article > div:first-child {
-    font-size: 1.4rem;
+.main > div:first-child {
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
-.article > div:last-child {
+.article > div > div:last-child {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 15px;
 }
 
@@ -180,4 +181,76 @@ button {
 
 .card > div:last-child > div:last-child {
     place-self: end;
+}
+
+/* RIGHT SIDEBAR */
+
+.right-sidebar {
+    display: grid;
+    gap: 15px;
+}
+
+.right-sidebar-upper {
+    display: grid;
+    gap: 15px;
+}
+
+.right-sidebar-upper > div:first-child {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.right-sidebar-upper .container {
+    background-color: var(--main-background-color);
+    border-radius: 8px;
+    display: grid;
+    gap: 12px;
+    padding: 30px;
+}
+
+.right-sidebar-upper .container > div {
+    padding: 15px;
+}
+
+.right-sidebar-upper .container > div > div:first-child {
+    font-weight: bold;
+}
+
+.right-sidebar-upper .container > div > div:last-child {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #64646467;
+}
+
+.right-sidebar-lower {
+    display: grid;
+    gap: 15px;
+}
+
+.right-sidebar-lower > div:first-child {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.right-sidebar-lower img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.right-sidebar-lower .container {
+    background-color: var(--main-background-color);
+    border-radius: 8px;
+    display: grid;
+    gap: 12px;
+    padding: 15px;
+}
+
+.right-sidebar-lower .container > div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.trending-bio {
+    color: #64646485;
 }
