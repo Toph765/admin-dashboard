@@ -9,6 +9,7 @@
 
 :root {
     --sidebar-color: #C63D2F;
+    --sidebar-color-alt: #22668D;
     --accent-color: #FFBB5C;
     --main-background-color: #F4F2DE;
     --text-color: #e9dcdb;
@@ -109,7 +110,7 @@ button {
 }
 
 .left-sidebar {
-    background-color: var(--sidebar-color);
+    background-color: var(--sidebar-color-alt);
     display: grid;
     grid-template-rows: auto auto 1fr;
     grid-column: 1 / 2;
@@ -168,6 +169,7 @@ button {
     border-radius: 8px;
     display: grid;
     grid-template-columns: 8px 1fr;
+    transition: 250ms;
 }
 
 .card > div:first-child {
@@ -266,4 +268,26 @@ button {
 
 .trending-bio {
     color: #64646485;
+}
+
+/* RESPONSIVENESS */
+
+.card:hover {
+    scale: 1.03;
+}
+
+.search img,
+.profile img,
+.profile h3,
+button,
+.card img:hover,
+.right-sidebar-upper .container > div,
+.right-sidebar-lower .trending-username:hover,
+.right-sidebar-lower img:hover {
+    cursor: grab;
+}
+
+.left-sidebar > div > div:hover {
+    color: var(--accent-color);
+    cursor: grab;
 }
